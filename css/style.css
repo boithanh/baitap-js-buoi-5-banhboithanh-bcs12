@@ -7,12 +7,7 @@
 }
 
 body {
-    /* background-image: linear-gradient(to left, #fc5c7d, #6a82fb); */
-    background-image: linear-gradient(to top, #FFE998, #57370D);
-    /* background-image: linear-gradient(to left, #EECC51, #203C58); */
-    /* background-image: linear-gradient(to right, #FDABDD, #374A5A); */
-    /* background-image: linear-gradient(to bottom, #18A5A7, #B6C0C5); */
-    /* background-image: linear-gradient(to top, #112D60, #DD83E0); */
+    background-image: url(../img/Tessellation-Extra-6-Justin-Prno-Walli.png);
     height: 100vh;
     background-size: cover;
 }
@@ -32,8 +27,7 @@ body {
 
 .blockbaitap .content_block {
     width: 69vw;
-    /* height: 85vh; */
-    height: 100%;
+    height: 85vh;
     margin: 5.9vh auto;
 
 }
@@ -203,13 +197,13 @@ body {
 
 @media screen and (max-width:1199.8px) {
     body {
-        background-image: linear-gradient(to right, #FFE998, #57370D);
         height: 100vh;
         background-repeat: no-repeat;
     }
 
     .blockbaitap .content_block {
         width: 100%;
+        margin: 15vh 3vh;
     }
 
 }
@@ -223,14 +217,13 @@ body {
 
 @media screen and (max-width:767.8px) {
     body {
-        background-image: linear-gradient(to left, #FFE998, #57370D);
         height: 100%;
     }
 
     .blockbaitap .content_block {
         width: 100%;
         height: 100%;
-        /* margin: 100% auto; */
+        margin: auto;
     }
 
     .kq p {
@@ -241,13 +234,14 @@ body {
 
 @media screen and (max-width:430px) {
 
-    body {
-        background-image: linear-gradient(to top, #FFE998, #57370D)
-    }
-
 
     .group_input {
         display: block;
+    }
+
+    .group_input input,
+    .group_input select {
+        margin-bottom: 2.5rem;
     }
 
     .blockbaitap .nav-link {
@@ -262,7 +256,7 @@ body {
     }
 
     .kq p {
-        font-size: .5rem;
+        font-size: .95rem;
     }
 
 }
@@ -286,6 +280,6 @@ body {
     }
 
     to {
-        right: 125%;
+        right: 200%;
     }
 }
