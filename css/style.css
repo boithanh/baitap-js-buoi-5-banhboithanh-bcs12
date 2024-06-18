@@ -1,0 +1,291 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    /* background-image: linear-gradient(to left, #fc5c7d, #6a82fb); */
+    background-image: linear-gradient(to top, #FFE998, #57370D);
+    /* background-image: linear-gradient(to left, #EECC51, #203C58); */
+    /* background-image: linear-gradient(to right, #FDABDD, #374A5A); */
+    /* background-image: linear-gradient(to bottom, #18A5A7, #B6C0C5); */
+    /* background-image: linear-gradient(to top, #112D60, #DD83E0); */
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.blockbaitap h2 {
+    font-family: "Pacifico", cursive;
+    text-shadow: black 1px 0 5px;
+}
+
+
+.blockbaitap .content_block {
+    width: 69vw;
+    /* height: 85vh; */
+    height: 100%;
+    margin: 5.9vh auto;
+
+}
+
+.blockbaitap .block_item:first-child {
+
+    padding: 30px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    border: 1px solid transparent;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.blockbaitap .block_item:last-child {
+
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid transparent;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+
+#frmBaiTap1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockbaitap input,
+.blockbaitap select {
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    background: transparent;
+    font-size: 1rem;
+}
+
+.blockbaitap input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.blockbaitap select:required {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.blockbaitap select:op {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+.blockbaitap input:focus,
+.blockbaitap select:focus {
+    box-shadow: none;
+    border-color: white;
+    background: transparent;
+    color: black;
+}
+
+
+.blockbaitap input:focus::placeholder,
+.blockbaitap select:focus::placeholder {
+    color: black;
+}
+
+
+.group_input {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.blockbaitap h2 {
+    margin-bottom: 1.5rem;
+}
+
+
+.blockbaitap .kq {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    background: transparent;
+    border: 2px solid transparent;
+    padding: 2rem 0;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+}
+
+
+
+.blockbaitap .block_item:last-child.light-way:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 100%);
+    top: 0;
+    transform: skewX(-25deg);
+    animation: anhsangcuuthe 2s forwards;
+    overflow: hidden;
+}
+
+
+.block_item {
+    overflow: hidden;
+}
+
+
+.blockbaitap {
+    overflow: hidden;
+}
+
+.kq p {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bolder;
+    line-height: 0;
+    font-family: "Pacifico", cursive;
+}
+
+
+.shuriken {
+    position: absolute;
+    clip-path: polygon(2% 8%, 45% 20%, 55% 39%, 95% 0, 84% 49%, 62% 51%, 100% 95%, 51% 78%, 50% 60%, 6% 100%, 15% 57%, 42% 49%);
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    bottom: 47px;
+    right: -2px;
+    transform: rotate(-20deg);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+}
+
+.xoay {
+    animation: xoay 3s linear infinite;
+}
+
+
+.blockbaitap .nav-pills .nav-link {
+    color: white;
+    width: 100%;
+}
+
+.blockbaitap .nav-pills .nav-link.active {
+    background-color: white;
+    color: black
+}
+
+
+
+@media screen and (max-width:1199.8px) {
+    body {
+        background-image: linear-gradient(to right, #FFE998, #57370D);
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+
+    .blockbaitap .content_block {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 767.8px) and (max-width:991.8px) {
+    .blockbaitap .nav-link {
+        padding: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width:767.8px) {
+    body {
+        background-image: linear-gradient(to left, #FFE998, #57370D);
+        height: 100%;
+    }
+
+    .blockbaitap .content_block {
+        width: 100%;
+        height: 100%;
+        /* margin: 100% auto; */
+    }
+
+    .kq p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+
+    body {
+        background-image: linear-gradient(to top, #FFE998, #57370D)
+    }
+
+
+    .group_input {
+        display: block;
+    }
+
+    .blockbaitap .nav-link {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        transition: all 0.5s;
+        font-family: "Pacifico", cursive;
+        font-size: 0.75rem;
+    }
+
+    .kq p {
+        font-size: .5rem;
+    }
+
+}
+
+
+
+@keyframes xoay {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes anhsangcuuthe {
+    from {
+
+        right: -100%;
+    }
+
+    to {
+        right: 125%;
+    }
+}
